@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Soft gray-blue background */
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-top: 80px; /* Height of header */
+  padding: 20px;
+}

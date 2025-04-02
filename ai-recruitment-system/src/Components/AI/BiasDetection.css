@@ -1,0 +1,75 @@
+.bias-detection {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bias-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.analyze-btn {
+  padding: 10px 20px;
+  background: #1a365d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.analyze-btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.bias-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.bias-category {
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.bias-meter {
+  height: 20px;
+  background: #eee;
+  border-radius: 10px;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.bias-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.bias-score {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.bias-findings {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bias-findings li {
+  padding: 5px 0;
+  font-size: 14px;
+  color: #666;
+}

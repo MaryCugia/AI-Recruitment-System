@@ -1,0 +1,162 @@
+.applications {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.applications-header {
+  margin-bottom: 2rem;
+}
+
+.applications-header h1 {
+  color: #1a365d;
+  margin-bottom: 1.5rem;
+}
+
+.applications-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a365d;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.application-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.job-info h3 {
+  color: #1a365d;
+  margin: 0 0 0.5rem 0;
+}
+
+.company {
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.application-details {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  color: #4a5568;
+}
+
+.detail-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.detail-item .label {
+  font-weight: 500;
+}
+
+.application-notes {
+  background: #f7fafc;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.application-notes h4 {
+  color: #1a365d;
+  margin: 0 0 0.5rem 0;
+}
+
+.application-notes p {
+  color: #4a5568;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.application-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.view-details-btn,
+.withdraw-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.view-details-btn {
+  background: #1a365d;
+  color: white;
+  border: none;
+}
+
+.view-details-btn:hover {
+  background: #2c5282;
+}
+
+.withdraw-btn {
+  background: white;
+  color: #e53e3e;
+  border: 1px solid #e53e3e;
+}
+
+.withdraw-btn:hover {
+  background: #fff5f5;
+}
+
+@media (max-width: 768px) {
+  .application-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .application-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .application-actions {
+    flex-direction: column;
+  }
+} 

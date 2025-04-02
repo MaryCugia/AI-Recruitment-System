@@ -1,0 +1,219 @@
+.job-application {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.application-header {
+  margin-bottom: 2rem;
+}
+
+.application-header h1 {
+  color: #1a365d;
+  margin-bottom: 1rem;
+}
+
+.application-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4299e1;
+  transition: width 0.3s ease;
+}
+
+.application-progress span {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.application-step {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.application-step h2 {
+  color: #1a365d;
+  margin-bottom: 1.5rem;
+}
+
+/* Job Details Styles */
+.job-details h3 {
+  color: #1a365d;
+  margin: 0 0 0.5rem 0;
+}
+
+.company {
+  color: #4a5568;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.location,
+.type {
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.description,
+.requirements {
+  margin-top: 1.5rem;
+}
+
+.description h4,
+.requirements h4 {
+  color: #1a365d;
+  margin-bottom: 0.5rem;
+}
+
+.requirements ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.requirements li {
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.requirements li:before {
+  content: "•";
+  color: #4299e1;
+  position: absolute;
+  left: 0;
+}
+
+/* Application Form Styles */
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.file-upload {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-name {
+  padding: 0.75rem;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  color: #4a5568;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.back-btn,
+.next-btn,
+.submit-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-btn {
+  background: white;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+.back-btn:hover {
+  background: #f7fafc;
+}
+
+.next-btn,
+.submit-btn {
+  background: #4299e1;
+  color: white;
+  border: none;
+}
+
+.next-btn:hover,
+.submit-btn:hover {
+  background: #3182ce;
+}
+
+.submit-btn {
+  background: #48bb78;
+}
+
+.submit-btn:hover {
+  background: #38a169;
+}
+
+@media (max-width: 768px) {
+  .job-application {
+    padding: 1rem;
+  }
+
+  .application-step {
+    padding: 1.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .back-btn,
+  .next-btn,
+  .submit-btn {
+    width: 100%;
+  }
+} 

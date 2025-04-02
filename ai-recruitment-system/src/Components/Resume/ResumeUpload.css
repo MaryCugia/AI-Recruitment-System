@@ -1,0 +1,33 @@
+.resume-upload-container {
+  padding: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropzone.active {
+  border-color: #1a365d;
+  background-color: rgba(26, 54, 93, 0.05);
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.upload-icon {
+  font-size: 48px;
+}
+
+.upload-hint {
+  font-size: 14px;
+  color: #666;
+}

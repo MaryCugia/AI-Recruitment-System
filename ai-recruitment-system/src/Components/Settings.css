@@ -1,0 +1,98 @@
+.settings-page {
+  padding: 20px;
+}
+
+.settings-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.settings-sidebar {
+  padding: 20px;
+  border-right: 1px solid #eee;
+}
+
+.settings-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-tabs button {
+  width: 100%;
+  padding: 12px 15px;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #666;
+}
+
+.settings-tabs button.active {
+  background: #1a365d;
+  color: white;
+}
+
+.settings-content {
+  padding: 20px;
+}
+
+.settings-form {
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.save-btn {
+  background: #1a365d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #2a4365;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Add responsive design for mobile */
+@media (max-width: 768px) {
+  .settings-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .settings-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+}

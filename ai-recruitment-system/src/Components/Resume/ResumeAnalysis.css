@@ -1,0 +1,18 @@
+.resume-analysis {
+  padding: 20px;
+}
+
+.resume-analysis-grid {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 1200px) {
+  .resume-analysis-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .analysis-section {
+    grid-column: 1 / -1;
+  }
+}
